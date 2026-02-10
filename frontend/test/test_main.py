@@ -14,7 +14,7 @@ client = TestClient(app)
 def test_health_check():
     response = client.get("/")
     assert response.status_code == 200 
-    assert response.json() == ("status": "API running")
+    assert response.json() == {"status": "API running"}
 
 def test_predict_valid_input():
     payload = {
@@ -29,4 +29,3 @@ def test_predict_valid_input():
     assert "predicted_Price" in data
     assert isinstance(data["predicted_price"],(int, float))
     assert data["predicted_price"] > 0 #assuming house prices are positive 
-    

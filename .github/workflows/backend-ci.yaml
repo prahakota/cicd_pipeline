@@ -34,8 +34,8 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref ==  'refs/heads/main' #optional extra safety
     steps:
-     - name: Trigger Render Deploy
-       run: |
+      - name: Trigger Render Deploy
+        run: |
           curl -x POST "${{ secrets.RENDER_DEPLOY_HOOK }}"
 
   
