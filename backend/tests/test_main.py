@@ -1,9 +1,11 @@
 #backend/test/test_main.py
 import pytest 
 from fastapi.testclient import TestClient
-from pathlib import path 
+from pathlib import Path
+
 import os 
-import pickle 
+import pickle from pathlib import Path
+
 import numpy as np 
 
 #import your app (adjust if you renamed it)
