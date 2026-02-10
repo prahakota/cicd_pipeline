@@ -1,5 +1,5 @@
 #backend/test/test_main.py
-import Pytest 
+import pytest 
 from fastapi.testclient import TestClient
 from pathlib import path 
 import os 
