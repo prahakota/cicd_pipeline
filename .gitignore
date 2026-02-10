@@ -1,0 +1,30 @@
+#=====================
+#python
+#=====================
+
+__pycache__/
+*.py[cod]
+*.pyo 
+*.pyd
+
+#virtual environment
+.venv/
+myvenv/
+env/
+
+#====================
+#Testing / Coverage
+#====================
+.pytest_cache/
+
+#====================
+#os/Editor 
+#====================
+
+.vscode/
+
+#====================
+#Secrets
+#====================
+.env
+.env.*

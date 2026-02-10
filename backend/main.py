@@ -6,8 +6,8 @@ import numpy as np
 
 app = FastAPI(title="Linear Regression API")
 
-#import os
-#model_PATH = path(os.getenv("Model_PATH","model/model.pkl"))
+import os
+model_PATH = path(os.getenv("Model_PATH","model/model.pkl"))
 
 MODEL_PATH = "models/model.pkl"
 try:
