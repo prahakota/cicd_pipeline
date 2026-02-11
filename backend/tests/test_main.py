@@ -30,6 +30,6 @@ def test_predict_valid_input():
     assert response.status_code == 200
     data = response.json()
 
-    assert "Predicted_Price" in data
+    assert "predicted_price" in data
     assert isinstance(data["Predicted_price"],(int, float))
     assert data["Predicted_price"] > 0 #assuming house prices are positive 
