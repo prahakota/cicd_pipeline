@@ -12,7 +12,7 @@ st.title("House Price Prediction")
 st.write("predict house price using a Linear Regression model")
 
 #user inputs
-area = st.number_input("Area (sqft)", min_value=300, max_value=5000 , value=1200.0)
+area = st.number_input("Area (sqft)", min_value=300, max_value=5000 , value=1200)
 bedrooms = st.number_input("Bedrooms", min_value=1, max_value=10, value=2)
 
 if st.button("Predict Price"):
