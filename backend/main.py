@@ -4,7 +4,7 @@ from pydantic import BaseModel
 import pickle
 import numpy as np
 import os
-from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI(title="Linear Regression API")
 
 
